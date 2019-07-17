@@ -1,17 +1,59 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>Global Code</title>
-	<link rel="stylesheet" href="/static/main.css"
-	</head>
+	<head>
+        	<title>Global Code</title>
+		<link rel="stylesheet" href="/static/bootstrap.min.css"> 
+		<link rel="stylesheet" href="/static/main.css">
+    	</head>
+	<br>
 	
-    <body>
+	<body>
 	
 	<div class="main-header">
         <h1>Global Code 2019</h1>
+	<nav>
+	<ul>
+	<div id="available"
+		<li>
+		<a href="home.html">Home|</a>
+		<a href="about.html">About|</a>
+		<a href="services.html">Services|</a>	
+		<a href="contact.html">Contact</a>
+		</li>
+	</div>
+
+	
+	</ul>
+	</nav>
+	</div>
+
+	<br>
+	<div id="paragraph">
+		<p>Hello <strong>{{to}}!</strong>, welcome to Global code 2019. This programme is held in some parts of the world where students in the various tertiary institutions are given training in python and various uses of the raspberry pi. This programme really gives opportunity to students who are curious to build new things and broaden their minds to know what is really going on in the world. Once again, welcome to global code, and enjoy to the fullest.</p>
 	</div>
 	<br>
-	<p>Hello user, welcome to Global code 2019. This programme is held in some parts of the world where students in the various tertiary institutions are given training in python and various uses of the raspberry pi. This programme really gives opportunity to students who are curious to build new things and broaden to minds to know what is really going on in the world. Once again, welcome to global code, and enjoy to the fullest.</p>
-
+	<div id="code"
+		<p>The students are given the opportunity to interact with the teachers freely and ask them questions on areas where they don't really understand. During the third week, student will be given the opportunity to present different projects on what they have learn so have. It is a very exciting experience!!!</p>
+	</div>
+	<b><br>
+	<form action="/add_todo">
+		<label>
+			To do item
+			<input type="text" name="item">	
+		</label>
+		<label>
+			Date
+			<input type="date" name="date">
+		</label>
+		<input type="submit" value="Add">
+	</form>
+	<ol>
+		{%for item in items%}
+		<li>{{item}}</li>
+		{%endfor%}
+	</ol>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
