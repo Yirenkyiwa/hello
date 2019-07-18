@@ -48,5 +48,24 @@ evens=[2,4,6,8]
 sum=2+4+6+8
 print(sum)
 
-age_2=input
+def get_name(name,password):
+    return (name,password)
+    
+name=input("What is your name?")
+pp=input("Enter your password")
+print(get_name(name,pp))
+
+def get_age(age):
+    return(age)
+age_2=input("How old are you?")
+print(get_age(age_2))
+
+#adding two numbers
+def calculate(num1, num2):
+    add= num1 + num2
+    return  add 
+num1=int(input("Enter first number"))
+num2=int(input("Enter second number"))
+print(calculate(num1,num2))
+
 

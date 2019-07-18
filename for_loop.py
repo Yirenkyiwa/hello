@@ -20,8 +20,10 @@ for q in range(4):
     for s in range(q):
         n="*" 
         print("*")
-        
-    
+
+print(list(range(1, 10)))
+
+
     
     
 
